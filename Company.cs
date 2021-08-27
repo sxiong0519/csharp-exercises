@@ -12,6 +12,7 @@ namespace Classes
 
        
         // Create a public property for holding a list of current employees
+        public List<Employee> employees = new List<Employee>();
 
         /*
             Create a constructor method that accepts two arguments:
@@ -27,5 +28,12 @@ namespace Classes
                 CreatedOn = date;
         }
 
+        public void EmployeeInfo()
+        {
+        foreach (Employee employee in employees)
+            {
+                Console.WriteLine($"{employee.FirstName} {employee.LastName} started working at {Name} on {employee.StartDate} as the {employee.Title} ");
+            }
+        }
     }
 }
